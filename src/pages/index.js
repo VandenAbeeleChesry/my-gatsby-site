@@ -10,6 +10,8 @@ export const Head = () => <Seo title="Home Page" />
 
 const HomePage = () => {
   return (
+      // De StaticImage is voor afbeeldingen die statisch zijn (hun src is hardcoded)
+      // GatsbyImage is voor dynamische afbeeldinge (hun src wordt via een prop doorgegeven) ~ In graphql kan je zo dan de placeholder, format etc instellen
       <Layout Title="Home">
           <p className={text}>Welkom op mijn website.</p>
           <StaticImage

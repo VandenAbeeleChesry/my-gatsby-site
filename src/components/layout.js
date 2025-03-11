@@ -8,7 +8,8 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import { container, navLink, navList, headerTitle, text, titleText } from './layout.module.css'
 
 // Children is content binnen de opgeroepen layout
-const Layout = ({Title, children, PageTitle}) => {
+const Layout = ({Title, children}) => {
+    // We halen statische data op die zelden veranderd (nav items, footer, titles van pagina's)
     const data = useStaticQuery(graphql`
         query MyQuery {
             site {
